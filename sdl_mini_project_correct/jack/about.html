@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+      <title>click</title>
+  <style>
+           #image{
+                display:none;
+             }
+             #image1{
+                display:none;
+             }
+               #image2{
+                display:none;
+             }
+               #image3{
+                display:none;
+             }
+               #image4{
+                display:none;
+             }
+               #image5{
+                display:none;
+             }
+      </style>
+
+
+      <script>
+             function imageShow(){
+                    document.getElementById('image').style.display = "block";       
+                    }
+
+                    function imageShow1(){
+                    document.getElementById('image1').style.display = "block";       
+                    }
+
+                    function imageShow2(){
+                    document.getElementById('image2').style.display = "block";       
+                    }
+
+                    function imageShow3(){
+                    document.getElementById('image3').style.display = "block";       
+                    }
+
+                    function imageShow4(){
+                    document.getElementById('image4').style.display = "block";       
+                    }
+
+                    function imageShow5(){
+                    document.getElementById('image5').style.display = "block";       
+                    }
+        </script>
+
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>PREDICTION</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-3 logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo"> <a href="index.html"><img src="images/logo1.jpg" alt="#"></a> </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-9">
+                  <div class="menu-area">
+                     <div class="limit-box">
+                        <nav class="main-menu">
+                           <ul class="menu-area-main">
+                              <li ">
+                                 <a href="prediction1.php">Home</a>
+                              </li>
+                              <li class="active">
+                                 <a href="about.html">DATA VISUALIZATION</a>
+                              </li>
+                              <li>
+                                 <a href="marketing.html">PREDICTION GRAPH</a>
+                              </li>
+                              <li>
+                                 <a href="blog.html">INTRODUCTION</a>
+                              </li>
+                              <li>
+                                 <a href="register.php">CHATBOX</a>
+                              </li>
+                              <li>
+                                 <a href="http://127.0.0.1:5000/">CROP PRODUCTION ANALYSIS</a>
+
+                              </li>
+                            
+                              <li>
+                                 <a href="#"><img src="images/search_icon.png" alt="#" /></a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end header inner -->
+      </header>
+      <!-- end header -->
+     
+      <!-- section --> 
+<div class="About-bg">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="aboutheading">
+               <h3>DATA <span class="orange_color">VISUALIZATION</span></h3>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+      <div class="section layout_padding">
+         <div class="container">
+           
+            <div class="row">
+               <div class="col-md-6">
+                 <img src="images/blog1.jpg" id="image" alt="graph" />
+               </div>
+               <div class="col-md-6">
+                  <div class="full blog_cont">
+                     <h4>Crop Year Vs Production Graph</h4>
+                     
+                     <p>(Line plot) Graphical representation of production of crops from year 1997 upto 2015.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row margin_top_30">
+                                 <div class="col-md-12">
+                                    <div class="left">
+                                       <button onclick="imageShow()">ClickMe</button>
+                                    </div>
+                                 </div>
+                              </div>
+
+        
+
+       
+
+
+            <div class="row margin_top_30">
+               <div class="col-md-6">
+                  <img src="images/blog2.jpg" id="image1" alt="graph_plot" />
+               </div>
+               <div class="col-md-6">
+                  <div class="full blog_cont">
+                     <h4>Area(in Acres) Vs Production Graph</h4>
+                     
+                     <p>(Joint plot) Graphical representation of area in Acres Vs production of crops.</p>
+                  </div>
+               </div>
+            </div>
+
+            <button type="button" onclick="imageShow1()">ClickMe</button>
+
+       
+
+
+
+            <div class="row margin_top_30">
+               <div class="col-md-6">
+                  <img src="images/blog3.jpg" id="image2" alt="cal" />
+               </div>
+               <div class="col-md-6">
+                  <div class="full blog_cont">
+                     <h4>Season Vs Production Graph</h4>
+                    
+                     <p>(Bar plot) Graphical representation of  Season Vs production of crops .</p>
+                  </div>
+               </div>
+            </div>
+
+            <button type="button" onclick="imageShow2()">ClickMe</button>
+
+       
+
+
+            <div class="row margin_top_30">
+               <div class="col-md-6">
+                  <img src="images/blog4.jpg" id="image3" alt="Medi" />
+               </div>
+               <div class="col-md-6">
+                  <div class="full blog_cont">
+                     <h4>Crop Year(for rice) Vs Production Graph</h4>
+                     
+                     <p>(Bar plot) Graphical representation of crop year (for rice) Vs production of crops.</p>
+                  </div>
+               </div>
+            </div>
+
+            <button type="button" onclick="imageShow3()">ClickMe</button>
+
+       
+
+
+
+            <div class="row margin_top_30">
+               <div class="col-md-6">
+                  <img src="images/blog5.jpg" id="image4" alt="Medical" />
+               </div>
+               <div class="col-md-6">
+                  <div class="full blog_cont">
+                     <h4>Crop Year(for Sugarcane) Vs Production Graph</h4>
+                     
+                     <p>(Bar plot) Graphical representation of crop year (for Sugarcane) Vs production of crops.</p>
+                  </div>
+               </div>
+            </div>
+
+            <button type="button" onclick="imageShow4()">ClickMe</button>
+
+      
+
+
+
+            <div class="row margin_top_30">
+               <div class="col-md-6">
+                  <img src="images/blog6.jpg" id="image5" alt="Medical" />
+               </div>
+
+
+               <div class="col-md-6">
+                  <div class="full blog_cont">
+                     <h4>Crop Year(for Coconut) Vs Production Graph</h4>
+                     
+                     <p>(Bar plot) Graphical representation of crop year (for Coconut) Vs production of crops.</p>
+                  </div>
+               </div>
+            </div>
+            <button type="button" onclick="imageShow5()">ClickMe</button>
+
+      
+
+
+
+
+
+
+
+
+
+            
+        
+    
+      <!-- end section -->
+     
+      <!-- footer -->
+      
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- Scrollbar Js Files -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+
+
+
+
+
+   </body>
+</html>

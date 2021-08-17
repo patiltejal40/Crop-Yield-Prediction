@@ -1,0 +1,59 @@
+ 
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <style>
+    a:link{
+      color:red;
+    }
+    a:visited
+    {
+      color:white;
+
+    }
+    a:hover
+    {
+      color:hotpink;
+    }
+    a:active{
+      color:blue;
+    }
+  </style>
+
+    
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Crop Production Analysis</h1>
+
+  <h2><a href="https://drive.google.com/file/d/1bk_887oZi-dIDNK787g2mjh38rVJKBaX/view?usp=sharing"><marquee>Click Here For Crop ID's</marquee></a></h2>
+
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="experience" placeholder="Crop Year" required="required" />
+        <input type="text" name="test_score" placeholder="Crop ID" required="required" />
+		<input type="text" name="interview_score" placeholder="Area" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+ 
+
+</body>
+</html>
